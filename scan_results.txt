@@ -1,0 +1,62 @@
+# Nmap 7.98 scan initiated Wed May  6 15:34:01 2026 as: /usr/lib/nmap/nmap --privileged -iL targets.txt -oN scan_results.txt
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.33s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 982 closed tcp ports (reset)
+PORT      STATE    SERVICE
+21/tcp    open     ftp
+22/tcp    open     ssh
+25/tcp    open     smtp
+53/tcp    open     domain
+80/tcp    open     http
+110/tcp   open     pop3
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+143/tcp   open     imap
+443/tcp   open     https
+445/tcp   filtered microsoft-ds
+1720/tcp  filtered h323q931
+2000/tcp  open     cisco-sccp
+5060/tcp  open     sip
+5061/tcp  filtered sip-tls
+8010/tcp  open     xmpp
+9929/tcp  open     nping-echo
+31337/tcp open     Elite
+
+Nmap scan report for example.com (104.20.23.154)
+Host is up (0.059s latency).
+Other addresses for example.com (not scanned): 172.66.147.243 2606:4700:10::6814:179a 2606:4700:10::ac42:93f3
+Not shown: 985 filtered tcp ports (no-response), 2 filtered tcp ports (admin-prohibited)
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+25/tcp   open   smtp
+53/tcp   open   domain
+80/tcp   open   http
+110/tcp  open   pop3
+113/tcp  closed ident
+143/tcp  open   imap
+443/tcp  open   https
+2000/tcp open   cisco-sccp
+5060/tcp open   sip
+8010/tcp open   xmpp
+8080/tcp open   http-proxy
+8443/tcp open   https-alt
+
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.053s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+Not shown: 987 filtered tcp ports (no-response), 2 filtered tcp ports (admin-prohibited)
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+25/tcp   open   smtp
+53/tcp   open   domain
+80/tcp   open   http
+110/tcp  open   pop3
+113/tcp  closed ident
+143/tcp  open   imap
+443/tcp  open   https
+2000/tcp open   cisco-sccp
+5060/tcp open   sip
+8010/tcp open   xmpp
+
+# Nmap done at Wed May  6 15:35:21 2026 -- 3 IP addresses (3 hosts up) scanned in 79.96 seconds
